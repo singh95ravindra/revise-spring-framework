@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h2>Please fill in your details</h2>
-	<form action="submit-admission-form" method="POST">
+	<form action="submit-admission-form2" method="POST">
 		<label for="studentName">Student Name</label>
 		<input type="text" name="studentName"/>
 		<label for="standard">Standard</label>
