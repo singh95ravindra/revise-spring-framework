@@ -7,6 +7,6 @@
 <title>Admission Success</title>
 </head>
 <body>
-<h2>Welcome, ${msg}</h2>
+<h2>Welcome ${student1.studentName} , you are in ${student1.studentStandard} standard</h2>
 </body>
 </html>

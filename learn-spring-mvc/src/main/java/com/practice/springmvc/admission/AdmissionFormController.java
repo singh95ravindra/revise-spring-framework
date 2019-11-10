@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.practice.springmvc.model.Student;
+
 @Controller
 public class AdmissionFormController {
 
@@ -18,8 +20,12 @@ public class AdmissionFormController {
 	@RequestMapping(value = "/submit-admission-form", method = RequestMethod.POST)
 	public ModelAndView submitAdmissionForm(@RequestParam("studentName") String name,
 			@RequestParam("standard") String standard) {
+		final Student student1 = new Student();
+		student1.setStudentName(name);
+		student1.setStudentStandard(standard);
+
 		final ModelAndView model = new ModelAndView("AdmissionSuccess");
-		model.addObject("msg", "Details submitted by you are as Name - " + name + " Class Name - " + standard);
+		model.addObject("student1", student1);
 		return model;
 	}
 }
