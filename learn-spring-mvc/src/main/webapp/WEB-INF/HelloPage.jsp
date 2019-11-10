@@ -1,5 +1,5 @@
 <html>
 	<body>
-		<h2>${welcomeMessage}</h2>
+		<p>${welcomeMessage}</p>
 	</body>
 </html>

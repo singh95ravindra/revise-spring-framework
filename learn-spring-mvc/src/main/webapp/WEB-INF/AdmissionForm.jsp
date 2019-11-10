@@ -7,12 +7,13 @@
 <title>Admission Success</title>
 </head>
 <body>
+	<h1>${headerMessage}</h1>
 	<h2>Please fill in your details</h2>
 	<form action="submit-admission-form2" method="POST">
 		<label for="studentName">Student Name</label>
 		<input type="text" name="studentName"/>
-		<label for="standard">Standard</label>
-		<input type="text" name="standard"/>
+		<label for="studentStandard">Standard</label>
+		<input type="text" name="studentStandard"/>
 		<input type="submit" value="Submit">
 	</form>
 </body>

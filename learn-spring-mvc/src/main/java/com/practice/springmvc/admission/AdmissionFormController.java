@@ -1,6 +1,7 @@
 package com.practice.springmvc.admission;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -16,6 +17,11 @@ public class AdmissionFormController {
 	public ModelAndView getAdmissionForm() {
 		final ModelAndView model = new ModelAndView("AdmissionForm");
 		return model;
+	}
+
+	@ModelAttribute
+	public void addCommonObjects(Model model) {
+		model.addAttribute("headerMessage", "Spring MVC Practice");
 	}
 
 	@RequestMapping(value = "/submit-admission-form", method = RequestMethod.POST)

@@ -7,6 +7,7 @@
 <title>Admission Success</title>
 </head>
 <body>
+<h1>${headerMessage}</h1>
 <h2>Welcome ${student1.studentName} , you are in ${student1.studentStandard} standard</h2>
 </body>
 </html>
